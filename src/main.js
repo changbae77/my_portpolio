@@ -23,3 +23,13 @@ document.addEventListener("scroll", () => {
     arrowUp.style.opacity = 1;
   }
 });
+
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+navbarToggle.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+navbarMenu.addEventListener("click", () => {
+  navbarMenu.classList.remove("open");
+});
